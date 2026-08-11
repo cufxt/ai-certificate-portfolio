@@ -1,0 +1,38 @@
+# --- Go (backend) ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# --- Node / Nuxt (frontend) ---
+node_modules/
+.nuxt/
+.output/
+.data/
+dist/
+*.tsbuildinfo
+.eslintcache
+
+# --- Package manager (pnpm) ---
+.pnpm-store/
+.pnpm-debug.log*
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
