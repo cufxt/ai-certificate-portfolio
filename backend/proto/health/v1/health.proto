@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package health.v1;
+
+option go_package = "github.com/cufxt/ai-certificate-portfolio/backend/gen/health/v1;healthv1";
+
+message PingRequest {}
+
+message PingResponse {
+  string status = 1;
+}
+
+service HealthService {
+  rpc Ping(PingRequest) returns (PingResponse);
+}

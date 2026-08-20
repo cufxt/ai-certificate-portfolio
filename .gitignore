@@ -7,6 +7,7 @@
 *.test
 *.out
 go.work
+backend/bin/
 
 # --- Node / Nuxt (frontend) ---
 node_modules/
@@ -29,6 +30,7 @@ dist/
 # --- IDE ---
 .vscode/
 .idea/
+.zed/
 
 # --- OS ---
 .DS_Store
