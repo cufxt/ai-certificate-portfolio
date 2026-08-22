@@ -15,8 +15,11 @@ node_modules/
 .output/
 .data/
 dist/
+.nitro
+.cache
 *.tsbuildinfo
 .eslintcache
+.nuxtrc
 
 # --- Package manager (pnpm) ---
 .pnpm-store/
@@ -31,10 +34,12 @@ dist/
 .vscode/
 .idea/
 .zed/
+.fleet
 
 # --- OS ---
 .DS_Store
 Thumbs.db
 
 # --- Logs ---
+logs
 *.log
