@@ -1,4 +1,4 @@
-.PHONY: run build lint test proto mocks
+.PHONY: run build lint test proto mocks migrate-up migrate-down migrate-create sqlc
 
 run:
 	go run ./cmd/server
@@ -17,3 +17,17 @@ proto:
 
 mocks:
 	mockery
+
+MIGRATIONS_PATH=migrations
+
+migrate-up:
+	migrate -path $(MIGRATIONS_PATH) -database "$(DATABASE_URL)" up
+
+migrate-down:
+	migrate -path $(MIGRATIONS_PATH) -database "$(DATABASE_URL)" down 1
+
+migrate-create:
+	migrate create -ext sql -dir $(MIGRATIONS_PATH) -seq $(name)
+
+sqlc:
+	sqlc generate
