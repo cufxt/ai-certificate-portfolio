@@ -8,6 +8,7 @@
 *.out
 go.work
 backend/bin/
+backend/tmp/
 
 # --- Node / Nuxt (frontend) ---
 node_modules/
