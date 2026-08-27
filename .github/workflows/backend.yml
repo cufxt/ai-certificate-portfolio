@@ -40,8 +40,8 @@ jobs:
       - name: Build
         run: go build -o bin/server ./cmd/server
 
-      - name: Install sqlc
-        run: go install github.com/sqlc-dev/sqlc/cmd/sqlc@v1.31.1
+      # - name: Install sqlc
+      #   run: go install github.com/sqlc-dev/sqlc/cmd/sqlc@v1.31.1
 
-      - name: sqlc compile
-        run: sqlc compile
+      # - name: sqlc compile
+      #   run: sqlc compile
